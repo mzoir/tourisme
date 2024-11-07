@@ -1,0 +1,66 @@
+{
+  "attractions": [
+    {
+      "id": 1,
+      "name": "Sahara Desert",
+      "location": "Merzouga",
+      "description": "The Sahara Desert is the world's largest hot desert, and one of the harshest environments on the planet.",
+      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://thumbs.dreamstime.com/b/d%C3%A9sert-du-sahara-43473000.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Todgha Gorge",
+      "location": "Tinghir",
+      "description": "Todgha Gorge is a canyon in the eastern part of the High Atlas Mountains in Morocco, near the town of Tinghir.",
+      "image": ["https://media.istockphoto.com/id/1686764388/fr/photo/gorges-de-todgha-un-canyon-dans-le-haut-atlas-au-maroc-pr%C3%A8s-de-la-ville-de-tinghir.jpg?s=612x612&w=0&k=20&c=X7a6FtDk36pHrZdUHFwWHvsMXtgB5xkMfXMAyymHYTw=", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5zF9hQPcla3AcGsHCIF476kLLp-horSF1A&s"]
+    },
+    {
+      "id": 3,
+      "name": "Ait Benhaddou",
+      "location": "Ouarzazate",
+      "description": "Ait Benhaddou is a fortified city along the former caravan route between the Sahara and Marrakech.",
+      "image": [
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg",
+        "https://www.marokko-erfahren.de/images/Fotos/Orte/Ait-Ben-Haddou/Ait-Ben-Haddou_P7035649_1.JPG"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Erfoud",
+      "location": "Erfoud",
+      "description": "Erfoud is known for its fossils, with numerous shops selling fossils and minerals.",
+      "image": [
+        "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTKCB6tWhsFL-w2kcLnaA1banVfn_DoVMEgKTWpvD9v68PxC40WX6W44_CzWx3vlm-1J64jWNkOiOXXByatW_DbMnzb__IL8dxhybomNw",
+        "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTRVxDFT3G1T9idtU8X5kAoCZzPjmGykdvooThcmyWx82lF3vUpzGjgw2kSmqt803pVtUGe_ls0ZECZ3TZmWsNxvrte0BtOgw8kshCHVQ"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ziz Valley",
+      "location": "Errachidia",
+      "description": "The Ziz Valley is a large oasis in the eastern part of Morocco, known for its palm groves and scenic landscapes.",
+      "image": ["https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/erra.jpg?alt=media&token=45b514b5-1f10-4775-bf14-8e6d115a584a", "https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/zizValeey.jpg?alt=media&token=4d850a7f-aa59-41e1-89de-d6f143c4b35c"]
+    },
+    {
+      "id": 6,
+      "name": "Tafilalt Oasis",
+      "location": "Errachidia",
+      "description": "The Tafilalt Oasis is one of the largest oases in Morocco, providing fertile land for agriculture.",
+      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+    },
+    {
+      "id": 7,
+      "name": "Ouarzazate",
+      "location": "Ouarzazate",
+      "description": "Ouarzazate is a city in southern Morocco, known as the gateway to the Sahara Desert and for its film studios.",
+      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+    },
+    {
+      "id": 8,
+      "name": "Dades Gorge",
+      "location": "Boumalne Dades",
+      "description": "Dades Gorge is a gorge in the Atlas Mountains in Morocco, known for its stunning rock formations and scenic views.",
+      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+    }
+  ]
+}

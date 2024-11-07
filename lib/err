@@ -1,0 +1,774 @@
+/*
+import 'view/log.dart';
+import 'package:flutter/material.dart';
+
+import 'Profile.dart';
+import 'search.dart';
+import 'package:flutter/services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'view/fav.dart';
+
+class HoMepa extends StatefulWidget {
+  final String email;
+
+  const HoMepa({Key? key, required this.email}) : super(key: key);
+
+  @override
+  _HoMepaState createState() => _HoMepaState();
+}
+
+class _HoMepaState extends State<HoMepa> {
+  int _currentIndex = 0;
+  List<Color> _favIconColors = [];
+  List<Color> _favIconColors1 = [];
+  String selectedPage = '';
+
+  void _onItemTapped(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _favIconColors = List.generate(5, (index) => Color(0xffffffff));
+    _favIconColors1 = List.generate(4, (index) => Color(0xffdcdbdb));
+  }
+
+  @override
+  final _auth = FirebaseAuth.instance;
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: <Widget>[
+        Image.asset(
+          "images/zak.jpg",
+          fit: BoxFit.cover,
+        ),
+        Scaffold(
+          appBar: AppBar(
+            flexibleSpace: Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('images/ddmo.jpg'), fit: BoxFit.fill)),
+            ),
+            backgroundColor: Colors.red,
+            leading: IconButton(
+              icon: Icon(
+                Icons.arrow_back_ios,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+            centerTitle: true,
+            title: Text(
+              'Tourismapp',
+              style: TextStyle(
+                fontFamily: 'Raleway',
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          endDrawer: Drawer(
+            width: 300,
+            elevation: 1.0,
+            child: ListView(
+              padding: EdgeInsets.zero,
+              children: <Widget>[
+                Container(
+                  height: 100,
+                  child: const DrawerHeader(
+                    margin: EdgeInsets.zero,
+                    decoration: const BoxDecoration(color: Color(0xff368ff4)),
+                    child: ListTile(
+                      leading: Text('menu'),
+                      trailing: Icon(
+                        Icons.settings,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ) ,
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.save),
+                  title: const Text(
+                    'Saved',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Color(0xfff20000),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'Saved';
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.settings),
+                  title: const Text(
+                    'Settings',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'Settings';
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.home),
+                  title: const Text(
+                    'close it',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'close it';
+                      Navigator.pop(context); // Close the drawer
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.help),
+                  title: const Text(
+                    'Help',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'Help';
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => _buildBody(2)),
+                      );
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.contact_emergency),
+                  title: const Text(
+                    'Contact us',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'Settings';
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+                ListTile(
+                  trailing: const Icon(
+                    Icons.keyboard_arrow_right,
+                  ),
+                  leading: const Icon(Icons.logout),
+                  title: const Text(
+                    'Log out',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'Log_out';
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginPage(),
+                        ),
+                      );
+
+                    });
+                  },
+                ),
+                ListTile(
+                  leading: const Icon(Icons.exit_to_app),
+                  title: const Text(
+                    'exit',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    setState(() {
+                      selectedPage = 'exit';
+                      SystemNavigator.pop();
+                    });
+                  },
+                ),
+                const Divider(
+                  height: 20,
+                  endIndent: 0,
+                  color: Color(0x319c9292),
+                ),
+              ],
+            ),
+          ),
+          body: _buildBody(_currentIndex),
+          bottomNavigationBar: Stack(
+            children: <Widget>[
+              SizedBox(
+                height: 58,
+                child: BottomNavigationBar(
+                  backgroundColor: Color(0xff4d3984),
+                  elevation: 0.0,
+                  currentIndex: _currentIndex,
+                  selectedItemColor: Color(0xf0f6f7fb),
+                  onTap: _onItemTapped,
+                  unselectedItemColor: Color(0xf7f8e700),
+                  unselectedLabelStyle: TextStyle(
+                    color: Colors.yellow,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  useLegacyColorScheme: true,
+                  type: BottomNavigationBarType.fixed,
+                  items: <BottomNavigationBarItem>[
+                    BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.home,
+                        color: Color(0xff050202),
+                        size: 20.0,
+                      ),
+                      label: 'Home',
+                    ),
+                    BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.search,
+                        color: Color(0xff000000),
+                        size: 20.0,
+                      ),
+                      backgroundColor: Colors.red,
+                      label: 'Search',
+                    ),
+                    BottomNavigationBarItem(
+                        backgroundColor: Color(0xff1202f9),
+                        icon: Icon(
+                          Icons.person,
+                          color: Colors.black,
+                          size: 20.0,
+                        ),
+                        label: 'Profile',
+                        tooltip: 'go to profile'),
+                    BottomNavigationBarItem(
+                      icon: Icon(
+                        Icons.favorite,
+                        color: Colors.red,
+                        size: 20.0,
+                      ),
+                      label: 'favourite',
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBody(_currentIndex) {
+    switch (_currentIndex) {
+      case 0:
+        return _buildHome();
+      case 1:
+        return search();
+      case 2:
+        return ProfileScreen(email :'${widget.email}');
+      case 3:
+        return FavoriteWidget();
+      default:
+        return _buildHome();
+    }
+  }
+
+  Widget _buildHome() {
+    final List<String> imageAssets = [
+      "images/marzo.jpg",
+      "images/fes1.jpg",
+      "images/err.jpg",
+      "images/oua.jpg",
+    ];
+    final List<String> imageAssetse = [
+      "images/ho1.jpg",
+      "images/ho2.jpg",
+      "images/ho3.jpg",
+      "images/4.jpg",
+    ];
+
+    final List<String> imageDescriptions = [
+      "Ville:Fes",
+      "Marrakech",
+      "tetouan",
+      "ouarzazte",
+    ];
+
+    final List<String> imageDescriptionse =
+    List.generate(5, (index) => "Description");
+
+    return Container(
+      margin: EdgeInsets.all(0.0),
+      decoration: BoxDecoration(
+          color: Colors.black,
+          image: DecorationImage(
+            image: AssetImage('images/ddmo.jpg'),
+            fit: BoxFit.cover,
+          )),
+
+      child: ListView(
+        scrollDirection: Axis.vertical,
+        children: <Widget> [
+
+          _buildImageAssetListe1(
+              imageAssets, imageDescriptions, _favIconColors),
+
+          _buildImageAssetListe2(
+              imageAssetse, imageDescriptionse, _favIconColors1),
+          Divider(
+            height: 85,
+            color: Colors.purple,
+          ),
+          _buildImageAssetListe3(
+              imageAssetse, imageDescriptionse, _favIconColors1),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildImageAssetListe1(
+      List<String> images, List<String> descriptions, List<Color> colors) {
+    int count = 0;
+    return SizedBox(
+      height: 250,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: images.length,
+        itemBuilder: (context, index) {
+          return Container(
+              padding: EdgeInsets.all(5),
+              height: 300,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                   ClipRRect(
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: SizedBox(
+                        width: 340,
+                        height: 240,
+                        child: Image.asset(
+                          images[index],
+                          height: 240,
+                          width: 350,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  TextButton(
+                    onPressed: () {
+                      // Handle the "View All" button press
+                      print('View All pressed');
+                    }, child: Text(
+                    'ViewALLattraction',
+                    style: TextStyle(
+                      color: Colors.red, // Customize the color if needed
+                    ),
+                  ),
+                  ),
+
+                ],
+              ),
+          );
+
+
+        },
+      ),
+    );
+  }
+
+  Widget _buildImageAssetListe2(
+      List<String> images, List<String> descriptions, List<Color> colors) {
+    int count = 0;
+    return SizedBox(
+      height: 310,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: images.length,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.all(0.3),
+            child: Container(
+              height: 280,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Card(
+                    elevation: 0.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: SizedBox(
+                        width: 340,
+                        height: 240,
+                        child: Image.asset(
+                          images[index],
+                          height: 240,
+                          width: 350,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      new Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          child: Row(
+                            textBaseline: TextBaseline.alphabetic,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(6),
+                                child: Text(
+                                  textAlign: TextAlign.left,
+                                  descriptions[index],
+                                  style: TextStyle(
+                                    fontFamily: 'Raleway',
+                                    color: Color(0xff000000),
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 90,
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  Icons.more,
+                                  size: 30.0,
+                                ),
+                                color: Colors.black,
+                                tooltip: 'See More',
+                                onPressed: () {
+                                  switch (index) {
+                                    case 0:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 1:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 2:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 3:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    default:
+                                    // Do nothing
+                                      break;
+                                  }
+                                },
+                              ),
+                              IconButton(
+                                  icon: Icon(
+                                    Icons.favorite,
+                                    size: 30.0,
+                                  ),
+                                  color: colors[index],
+                                  tooltip: 'Add to favorite',
+                                  onPressed: () {
+                                    if (count == 0) {
+                                      setState(() {
+                                        colors[index] = Colors.red;
+                                        count++;
+                                      });
+                                    } else if (count == 1) {
+                                      setState(() {
+                                        // Set the color to another color or whatever you want to do when count is 1
+                                        colors[index] = Colors
+                                            .blue; // For example, setting it to blue
+                                        count++;
+                                      });
+                                    } else if (count == 2) {
+                                      setState(() {
+                                        colors[index] = Color(0xfff8f5f4);
+                                        count--;
+                                      });
+                                    }
+                                  }),
+                              IconButton(
+                                tooltip: 'visit maps',
+                                icon: Icon(
+                                  Icons.map,
+                                  size: 30.0,
+                                ),
+                                color: Color(0xffd925d9),
+                                onPressed: () {
+                                  setState(() {});
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  Widget _buildImageAssetListe3(
+      List<String> images, List<String> descriptions, List<Color> colors) {
+    int count = 0;
+    return SizedBox(
+      height: 310,
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: images.length,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: EdgeInsets.all(0.3),
+            child: Container(
+              height: 280,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Card(
+                    elevation: 0.0,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20.0),
+                      child: SizedBox(
+                        width: 340,
+                        height: 240,
+                        child: Image.asset(
+                          images[index],
+                          height: 240,
+                          width: 350,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      new Align(
+                        alignment: Alignment.topLeft,
+                        child: Container(
+                          child: Row(
+                            textBaseline: TextBaseline.alphabetic,
+                            children: [
+                              Container(
+                                margin: EdgeInsets.all(6),
+                                child: Text(
+                                  textAlign: TextAlign.left,
+                                  descriptions[index],
+                                  style: TextStyle(
+                                    fontFamily: 'Raleway',
+                                    color: Color(0xff000000),
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 90,
+                              ),
+                              IconButton(
+                                icon: Icon(
+                                  Icons.more,
+                                  size: 30.0,
+                                ),
+                                color: Colors.black,
+                                tooltip: 'See More',
+                                onPressed: () {
+                                  switch (index) {
+                                    case 0:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 1:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 2:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    case 3:
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => oimages1(),
+                                        ),
+                                      );
+                                      break;
+                                    default:
+                                    // Do nothing
+                                      break;
+                                  }
+                                },
+                              ),
+                              IconButton(
+                                  icon: Icon(
+                                    Icons.favorite,
+                                    size: 30.0,
+                                  ),
+                                  color: colors[index],
+                                  tooltip: 'Add to favorite',
+                                  onPressed: () {
+                                    if (count == 0) {
+                                      setState(() {
+                                        colors[index] = Colors.red;
+                                        count++;
+                                      });
+                                    } else if (count == 1) {
+                                      setState(() {
+                                        // Set the color to another color or whatever you want to do when count is 1
+                                        colors[index] = Colors
+                                            .blue; // For example, setting it to blue
+                                        count++;
+                                      });
+                                    } else if (count == 2) {
+                                      setState(() {
+                                        colors[index] = Color(0xfff8f5f4);
+                                        count--;
+                                      });
+                                    }
+                                  }),
+                              IconButton(
+                                tooltip: 'visit maps',
+                                icon: Icon(
+                                  Icons.map,
+                                  size: 30.0,
+                                ),
+                                color: Color(0xffd925d9),
+                                onPressed: () {
+                                  setState(() {});
+                                },
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+}
+*/

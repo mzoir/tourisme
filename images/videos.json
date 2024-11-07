@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Introduction to Flutter",
+    "url": "https://example.com/intro_flutter.mp4",
+    "description": "A brief introduction to Flutter development."
+  },
+  {
+    "name": "State Management in Flutter",
+    "url": "https://example.com/state_management.mp4",
+    "description": "Understanding state management in Flutter."
+  },
+  {
+    "name": "Building Responsive UIs",
+    "url": "https://example.com/responsive_ui.mp4",
+    "description": "Learn how to build responsive UIs in Flutter."
+  }
+]

@@ -1,0 +1,153 @@
+{
+  "hotels": [
+    {
+      "name": "Hotel Xaluca Dades",
+      "location": "Boumalne Dades",
+      "price": 34.5,
+      "description": "Hotel Xaluca Dades offers stunning views of the Dades Valley and the Atlas Mountains, featuring traditional Moroccan decor.",
+      "image": [
+        "https://optim.tildacdn.net/tild3764-6436-4063-b930-633539653461/-/resize/339x/-/format/webp/Swimming_area_Hotel_.jpg",
+        "https://optim.tildacdn.net/tild3538-3537-4661-b135-623666663065/-/resize/339x/-/format/webp/Swimming_area_Hotel_.jpg",
+        "https://optim.tildacdn.net/tild3063-3566-4462-b562-656238393937/-/resize/339x/-/format/webp/Standard_Hotel_Xaluc.jpg"
+      ],
+      "reservation_link": "https://344339_kasbah-hotel-xaluca-arfoud.book-direct.website/en/",
+      "phone_number": "+212 5248-92828",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Hotel+Xaluca+Dades+map&segment=Hotel&ppois=31.374296188354492_-5.9827470779418945_Hotel+Xaluca+Dades+map_%7E&cp=31.374304%7E-5.977442&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.5
+    },
+    {
+      "name": "Kasbah Hotel Xaluca Arfoud",
+      "location": "Erfoud",
+      "price": 33.0,
+      "description": "Kasbah Hotel Xaluca Arfoud is a luxurious hotel in the heart of Erfoud, offering comfortable accommodations and a variety of recreational activities.",
+      "image": [
+        "https://static.tildacdn.net/tild6535-3432-4736-b362-643236323936/General_Kasbah_Hotel.jpg",
+        "https://static.tildacdn.net/tild3862-3430-4431-b230-633465636333/DJI_0001.jpg",
+        "https://static.tildacdn.net/tild6564-3837-4033-b932-323435623930/DJI_0012.jpg"
+      ],
+      "reservation_link": "https://xaluca.com/kasbahhotelxaluca",
+      "phone_number": "+212 5355-77777",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7ELargeMapLink&ty=18&q=Kasbah+Hotel+Xaluca+Arfoud&segment=Hotel&ppois=31.487056732177734_-4.213201999664307_Kasbah+Hotel+Xaluca+Arfoud_%7E&cp=31.487053%7E-4.213192&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
+      "rating": 4.4
+    },
+    {
+      "name": "Chez Pierre",
+      "location": "Dades Gorge",
+      "price": 39.2,
+      "description": "Chez Pierre is a charming boutique hotel located in the Dades Gorge, known for its warm hospitality and breathtaking views.",
+      "image": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/38/7e/7b/auberge-chez-pierre.jpg?w=600&h=-1&s=1",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/197117321.jpg?k=ff57b9bf5d4eabca8d43c1670a7480d83cced3a039f81cc783cace5347545558&o="
+      ],
+      "reservation_link": "https://chezpierre.org/",
+      "phone_number": "+212 5248-55678",
+      "map": "https://www.bing.com/maps?mepi=128%7EVacationRental%7EUnknown%7ELargeMapLink&ty=18&q=Chez+Pierre+map&ppois=31.511457443237305_-5.936528205871582_Chez+Pierre+map_%7E&cp=31.51124%7E-5.766449&v=2&sV=1&FORM=MPSRPL&lvl=11.0",
+      "rating": 4.6
+    },
+    {
+      "name": "Kasbah Tizimi",
+      "location": "Erfoud",
+      "price": 60.0,
+      "description": "Kasbah Tizimi is a traditional Moroccan hotel located in Erfoud, featuring a beautiful courtyard, pool, and authentic Moroccan cuisine.",
+      "image": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/ea/56/57/kasbah-tizimi.jpg?w=1200&h=-1&s=1",
+        "https://c.otcdn.com/imglib/hotelfotos/8/152/hotel-kasbah-tizimi-erfoud-20240310135409599700.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0e/4a/4b/ad/kasbah-tizimi.jpg"
+      ],
+      "reservation_link": "http://kasbah-tizimi.com/",
+      "phone_number": "+212 5355-65656",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Tizimi+Erfoud+map&segment=Hotel&ppois=31.42514991760254_-4.232150077819824_Kasbah+Tizimi+Erfoud+map_%7E&cp=31.425158%7E-4.226838&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.3
+    },
+    {
+      "name": "Palais du Desert",
+      "location": "Errachidia",
+      "price": 33.5,
+      "description": "Palais du Desert is a luxury hotel in Errachidia, offering elegant rooms, a spa, and exquisite dining options.",
+      "image": [
+        "https://lh3.googleusercontent.com/p/AF1QipOR3PRZcwzblDadh7RoGcdxl9iOAdnhH_TfwaIi=s680-w680-h510",
+        "https://i.travelapi.com/lodging/3000000/2740000/2739100/2739072/e4242296_z.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0e/5c/6c/8b/palais-du-desert.jpg"
+      ],
+      "reservation_link": "http://palaisdudesert.com/",
+      "phone_number": "+212 5357-78901",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Palais+du+Desert+Errachidia+map&segment=Hotel&ppois=31.944929122924805_-4.398677825927734_Palais+du+Desert+Errachidia+map_%7E&cp=31.944938%7E-4.393363&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.5
+    },
+    {
+      "name": "Riad Salam Erfoud",
+      "location": "Erfoud",
+      "price": 32.5,
+      "description": "Riad Salam Erfoud is a traditional riad in Erfoud, providing a serene environment, comfortable rooms, and Moroccan hospitality.",
+      "image": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/45/2e/e0/riad-salam-erfoud.jpg?w=1100&h=-1&s=1",
+        "https://i.travelapi.com/lodging/10000000/9840000/9830500/9830496/8b8e310d_z.jpg"
+      ],
+      "reservation_link": "http://riadsalam-erfoud.com/",
+      "phone_number": "+212 5356-56565",
+      "map": "https://www.bing.com/maps?&mepi=128~Hotel~Unknown~LargeMapLink&ty=18&q=Kasbah%20Tizimi%20hotel%20map&segment=Hotel&ppois=31.428951263427734_-4.245874881744385_Kasbah%20Tizimi%20hotel%20map_~&cp=31.428951~-4.245875&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
+      "rating": 4.4
+    },
+    {
+      "name": "Hotel Belere Erfoud",
+      "location": "Erfoud",
+      "price": 40.5,
+      "description": "Hotel Belere Erfoud offers modern amenities and comfortable accommodations in the heart of Erfoud, perfect for exploring the surrounding desert.",
+      "image": [
+        "https://ak-d.tripcdn.com/images/220l0z000000nnuza8070_R_960_660_R5_D.jpg",
+        "https://hi-cdn.t-rp.co.uk/images/hotels/120348/3",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0e/5d/7c/36/hotel-belere-erfoud.jpg"
+      ],
+      "reservation_link": "https://www.belerehotels.com/",
+      "phone_number": "+212 5354-33567",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Hotel+Belere+Erfoud+map&segment=Hotel&ppois=31.43535041809082_-4.227156162261963_Hotel+Belere+Erfoud+map_%7E&cp=31.435359%7E-4.221844&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      ,
+      "rating" : 4.0
+    },
+    {
+      "name": "Auberge Les Roches",
+      "location": "Merzouga",
+      "price": 23.5,
+      "description": "Auberge Les Roches is a cozy inn located near the Merzouga Dunes, providing easy access to desert adventures and local attractions.",
+      "image": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVEelN0IRVJwDgI1flquYTAJqSqhqDUDNaFA&s",
+        "https://i.travelapi.com/lodging/30000000/29870000/29863900/29863850/b14429a0_z.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0d/2f/3e/93/auberge-les-roches.jpg"
+      ],
+      "reservation_link": "http://www.aubergelesroches.com/",
+      "phone_number": "+212 5358-97865",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Auberge+Les+Roches+Merzouga+map&segment=Hotel&ppois=31.095680236816406_-4.01373291015625_Auberge+Les+Roches+Merzouga+map_%7E&cp=31.095689%7E-4.008419&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
+    },
+    {
+      "name": "Kasbah Hotel Tombouctou",
+      "location": "Merzouga",
+      "price": 28.5,
+      "description": "Kasbah Hotel Tombouctou is a luxurious desert retreat in Merzouga, offering panoramic views of the dunes and a range of modern amenities.",
+      "image": [
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/e3/54/7f/photo0jpg.jpg?w=1200&h=-1&s=1",
+        "https://thumbcdn-5.hotelurbano.net/GOX3-AB2xv-RgcSsh6VU9ufxylQ=/900x600/center/middle/https://i.t4w.mobi/h/MA/1024568/1120017/1120017_11daef62_z.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0d/2f/3f/32/kasbah-hotel-tombouctou.jpg"
+      ],
+      "reservation_link": "http://tombouctoumerzouga.com/",
+      "phone_number": "+212 5359-56789",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Hotel+Tombouctou+Merzouga+map&segment=Hotel&ppois=31.089073181152344_-4.01304292678833_Kasbah+Hotel+Tombouctou+Merzouga+map_%7E&cp=31.089082%7E-4.007731&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
+    },
+    {
+      "name": "Riad Nomad",
+      "location": "Merzouga",
+      "price": 40.5,
+      "description": "Riad Nomad is a traditional riad in Merzouga, featuring beautifully decorated rooms and easy access to desert excursions.",
+      "image": [
+        "https://cf.bstatic.com/xdata/images/hotel/max500/281265489.jpg?k=043ba9e310478cd8d88de276394c87253ed69343899c3f63577397ce3c7ccbf6&o=&hp=1",
+        "https://q-xx.bstatic.com/xdata/images/hotel/max500/125039760.jpg?k=bd0c3b110ee9d2a22de7813812c937d88cb9c54bd4ba0909e3ccbfc86a6836c1&o=",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0d/2f/3f/32/riad-nomad.jpg"
+      ],
+      "reservation_link": "https://riadnomad.com/",
+      "phone_number": "+212 5356-12345",
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Riad+Nomad+Merzouga+map&segment=Hotel&ppois=31.08553123474121_-4.012092590332031_Riad+Nomad+Merzouga+map_%7E&cp=31.08554%7E-4.006781&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
+    }
+  ]
+}

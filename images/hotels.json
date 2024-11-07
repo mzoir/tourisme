@@ -1,0 +1,50 @@
+ {
+   
+   "hotels" :[
+  {
+    "name": "Hotel Sunshine",
+    "location": {
+      "address": "123 Sunny Street",
+      "city": "Sunnytown",
+      "state": "California",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Mountain Retreat",
+    "location": {
+      "address": "456 Mountain Road",
+      "city": "Highpeak",
+      "state": "Colorado",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Beachside Inn",
+    "location": {
+      "address": "789 Ocean Drive",
+      "city": "Seaville",
+      "state": "Florida",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "City Center Hotel",
+    "location": {
+      "address": "101 City Plaza",
+      "city": "Metropolis",
+      "state": "New York",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Lakeside Lodge",
+    "location": {
+      "address": "202 Lakeview Drive",
+      "city": "Laketown",
+      "state": "Michigan",
+      "country": "USA"
+    }
+  }
+]
+}
