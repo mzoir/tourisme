@@ -420,7 +420,7 @@ class _HoMepaState extends State<HoMepa> {
       "images/Kasba_Taourirt_1 (2).jpg",
       "images/fes1.jpg",
       "images/had.jpg",
-      "images/oua.jpg",
+      "images/daraas.jpg",
     ];
     final List<String> imageDescriptions = [
       "Ville:Fes",

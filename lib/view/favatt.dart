@@ -88,9 +88,9 @@ class _FavoriteAttractionsPageState extends State<FavoriteAttractionsPage> {
                     height: 80,
                     fit: BoxFit.cover,
                   )
-                      : Icon(Icons.image, size: 80),
+                      : const Icon(Icons.image, size: 80),
                   trailing: ElevatedButton(
-                    child: Icon(Icons.close),
+                    child: const Icon(Icons.close),
                     onPressed: () {
                       deleteItemById(favorite['id'],client.id);
 

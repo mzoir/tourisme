@@ -190,7 +190,7 @@ class _HotelsPageState extends State<HotelsPage> {
                   child: Card(
                     margin: EdgeInsets.all(6),
                     borderOnForeground: true,
-                    color: Colors.blue,
+                    color: Colors.grey,
                     child: Center(
                       child: ListTile(
                         leading: Image.network(
