@@ -19,12 +19,15 @@ class _RestodeState extends State<Restode> {
         title: Text(restaurant.name),
         backgroundColor: Colors.deepPurple,
       ),
-      body: SingleChildScrollView(
-        child: Padding(
+      body:  Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: Center(child:
+    Card( color: Colors.deepPurple[100],
+
+      child: Center(child : Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              const SizedBox(height: 90),
               // Restaurant Name
               Text(
                 restaurant.name,
@@ -35,7 +38,7 @@ class _RestodeState extends State<Restode> {
               // Address and City
               Text(
                 "${restaurant.address}, ${restaurant.ville}",
-                style: TextStyle(fontSize: 16, color: Colors.grey[600]),
+                style: TextStyle(fontSize: 16, color: Colors.redAccent,fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
 
@@ -64,7 +67,7 @@ class _RestodeState extends State<Restode> {
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8),
                           child: Image.network(
-                            restaurant.images[index],
+                            restaurant.images[0],
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -79,10 +82,27 @@ class _RestodeState extends State<Restode> {
                 "Discover the flavors of ${restaurant.name} located in ${restaurant.ville}.",
                 style: TextStyle(fontSize: 16),
               ),
+              const SizedBox(height: 20),
+
+              ElevatedButton.icon(
+                onPressed: () {
+                  // Add your booking functionality here
+                },
+                icon: const Icon(Icons.book_online),
+                label: const Text("Book Now"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple,
+                  foregroundColor: Colors.white,
+                ),
+              ),
+
+
             ],
           ),
         ),
       ),
-    );
+    ),
+      ),
+      );
   }
 }
