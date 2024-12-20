@@ -79,14 +79,16 @@ class _FavoriteAttractionsPageState extends State<FavoriteAttractionsPage> {
               return Card(
                 color: Colors.yellow,
                 child: ListTile(
-                  title: Text(favorite['name'].toString()),
-                  subtitle: Text(favorite['location'].toString()),
-                  leading: Image.network(
-                    favorite['image'],
+                  title: Text(favorite['name'].toString() ?? 'Unnamed Attraction'),
+                  subtitle: Text(favorite['location'].toString() ?? ""),
+                  leading: favorite['image'] != null
+                      ? Image.network(
+                    favorite['image']!,
                     width: 80,
                     height: 80,
                     fit: BoxFit.cover,
-                  ),
+                  )
+                      : Icon(Icons.image, size: 80),
                   trailing: ElevatedButton(
                     child: Icon(Icons.close),
                     onPressed: () {

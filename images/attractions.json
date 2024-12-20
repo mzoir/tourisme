@@ -5,14 +5,20 @@
       "name": "Sahara Desert",
       "location": "Merzouga",
       "description": "The Sahara Desert is the world's largest hot desert, and one of the harshest environments on the planet.",
-      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://thumbs.dreamstime.com/b/d%C3%A9sert-du-sahara-43473000.jpg"]
+      "image": [
+        "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg",
+        "https://thumbs.dreamstime.com/b/d%C3%A9sert-du-sahara-43473000.jpg"
+      ]
     },
     {
       "id": 2,
       "name": "Todgha Gorge",
       "location": "Tinghir",
       "description": "Todgha Gorge is a canyon in the eastern part of the High Atlas Mountains in Morocco, near the town of Tinghir.",
-      "image": ["https://media.istockphoto.com/id/1686764388/fr/photo/gorges-de-todgha-un-canyon-dans-le-haut-atlas-au-maroc-pr%C3%A8s-de-la-ville-de-tinghir.jpg?s=612x612&w=0&k=20&c=X7a6FtDk36pHrZdUHFwWHvsMXtgB5xkMfXMAyymHYTw=", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5zF9hQPcla3AcGsHCIF476kLLp-horSF1A&s"]
+      "image": [
+        "https://media.istockphoto.com/id/1686764388/fr/photo/gorges-de-todgha-un-canyon-dans-le-haut-atlas-au-maroc-pr%C3%A8s-de-la-ville-de-tinghir.jpg?s=612x612&w=0&k=20&c=X7a6FtDk36pHrZdUHFwWHvsMXtgB5xkMfXMAyymHYTw=",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf5zF9hQPcla3AcGsHCIF476kLLp-horSF1A&s"
+      ]
     },
     {
       "id": 3,
@@ -20,8 +26,8 @@
       "location": "Ouarzazate",
       "description": "Ait Benhaddou is a fortified city along the former caravan route between the Sahara and Marrakech.",
       "image": [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg",
-        "https://www.marokko-erfahren.de/images/Fotos/Orte/Ait-Ben-Haddou/Ait-Ben-Haddou_P7035649_1.JPG"
+       "https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=100&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20100w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20200w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20300w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20400w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20500w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20600w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20700w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20800w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%20900w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%201000w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%201200w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%201400w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%201600w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=1800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%201800w,%20https://plus.unsplash.com/premium_photo-1694475076446-be50f54a9688?w=2000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl0JTIwYmVuaGFkZG91fGVufDB8fDB8fHww%202000w",
+        "https://upload.wikimedia.org/wikipedia/commons/d/d5/Ksar_A%C3%AFt_Benhaddou%2C_Marocco_%28%D8%A3%D9%8A%D8%AA_%D8%A8%D9%86_%D8%AD%D8%AF%D9%88%D8%8C_%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%2C_%E2%B4%B0%E2%B5%A2%E2%B5%9C_%E2%B5%83%E2%B4%B0%E2%B4%B7%E2%B4%B7%E2%B5%93%29.jpg"
       ]
     },
     {
@@ -39,28 +45,40 @@
       "name": "Ziz Valley",
       "location": "Errachidia",
       "description": "The Ziz Valley is a large oasis in the eastern part of Morocco, known for its palm groves and scenic landscapes.",
-      "image": ["https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/erra.jpg?alt=media&token=45b514b5-1f10-4775-bf14-8e6d115a584a", "https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/zizValeey.jpg?alt=media&token=4d850a7f-aa59-41e1-89de-d6f143c4b35c"]
+      "image": [
+        "https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/erra.jpg?alt=media&token=45b514b5-1f10-4775-bf14-8e6d115a584a",
+        "https://firebasestorage.googleapis.com/v0/b/plmo-c5ddd.appspot.com/o/zizValeey.jpg?alt=media&token=4d850a7f-aa59-41e1-89de-d6f143c4b35c"
+      ]
     },
     {
       "id": 6,
       "name": "Tafilalt Oasis",
       "location": "Errachidia",
       "description": "The Tafilalt Oasis is one of the largest oases in Morocco, providing fertile land for agriculture.",
-      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+      "image": [
+        "https://www.visittafilalet.com/wp-content/uploads/2020/08/Oasis-Tafilalet-Irrigation.jpg",
+        "https://mapecology.ma/wp-content/uploads/2018/06/oasis-582x386.jpg"
+      ]
     },
     {
       "id": 7,
       "name": "Ouarzazate",
       "location": "Ouarzazate",
       "description": "Ouarzazate is a city in southern Morocco, known as the gateway to the Sahara Desert and for its film studios.",
-      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+      "image": [
+        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kasbah_Taourirt_in_Ouarzazate_2011.jpg",
+        "https://lp-cms-production.imgix.net/2019-06/GettyImages-471307332_high.jpg"
+      ]
     },
     {
       "id": 8,
       "name": "Dades Gorge",
       "location": "Boumalne Dades",
       "description": "Dades Gorge is a gorge in the Atlas Mountains in Morocco, known for its stunning rock formations and scenic views.",
-      "image": ["https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg", "https://cdn.britannica.com/10/152310-050-5A09D74A/Sand-dunes-Sahara-Morocco-Merzouga.jpg"]
+      "image": [
+        "https://media.istockphoto.com/id/1040620616/fr/photo/ruelle-dans-les-gorges-du-dad%C3%A8s-au-maroc.jpg?s=612x612&w=0&k=20&c=TZcM5juZ3hlB2LQUSueDXO1yKt397N3aKLrmyEszsSc=",
+        "https://images.unsplash.com/photo-1624802310746-73f453682d23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8R29yZ2VzJTIwZHUlMjBEYWQlQzMlQThzfGVufDB8fDB8fHww"
+      ]
     }
   ]
 }
