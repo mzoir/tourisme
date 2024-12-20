@@ -12,6 +12,31 @@ class FavoriteAttractionsPage extends StatefulWidget {
 
 class _FavoriteAttractionsPageState extends State<FavoriteAttractionsPage> {
   final FirebaseFirestore firestore = FirebaseFirestore.instance;
+  Future<void> deleteItemById(int id , String userId) async {
+    try {
+      // Reference your Firestore collection
+      final collectionRef = FirebaseFirestore.instance.collection('users')
+        .doc(userId)
+        .collection('favorites');
+
+      // Query the document with the matching `id` field
+      final querySnapshot = await collectionRef.where('id', isEqualTo: id).get();
+
+      // Check if any document matches the query
+      if (querySnapshot.docs.isNotEmpty) {
+        // Delete the document(s)
+        for (var doc in querySnapshot.docs) {
+          await collectionRef.doc(doc.id).delete();
+        }
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Item deleted successfully!')));
+      } else {
+        print('No item found with id $id');
+      }
+    } catch (e) {
+      print('Error deleting item: $e');
+    }
+  }
 
   Stream<List<Map<String, dynamic>>> getFavorites(String userId) {
     return firestore
@@ -65,7 +90,8 @@ class _FavoriteAttractionsPageState extends State<FavoriteAttractionsPage> {
                   trailing: ElevatedButton(
                     child: Icon(Icons.close),
                     onPressed: () {
-                      // Add functionality to remove item from favorites
+                      deleteItemById(favorite['id'],client.id);
+
                     },
                   ),
                 ),

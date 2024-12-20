@@ -2,21 +2,19 @@ import 'package:provider/provider.dart';
 import 'package:tourisme/view/settings.dart';
 
 import 'package:tourisme/service/auth.dart';
-import 'package:tourisme/view/showvideos.dart';
 import 'allresto.dart';
 import 'log.dart';
 import 'package:flutter/material.dart';
 import 'Profile.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'dart:convert';
 import 'package:tourisme/models/hotel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'hotels.dart';
 import 'attraction_page.dart';
 
-import 'fav.dart';
+import 'favhotel.dart';
 import 'favatt.dart';
 
 class HoMepa extends StatefulWidget {
@@ -385,15 +383,7 @@ class _HoMepaState extends State<HoMepa> {
                       ),
                       label: 'Home',
                     ),
-                    BottomNavigationBarItem(
-                      icon: Icon(
-                        Icons.video_library_rounded,
-                        color: Colors.red,
-                        size: 20.0,
-                      ),
-                      backgroundColor: Colors.red,
-                      label: 'Videos',
-                    ),
+
                     BottomNavigationBarItem(
                         backgroundColor: Color(0xff1202f9),
                         icon: Icon(
@@ -418,8 +408,6 @@ class _HoMepaState extends State<HoMepa> {
       case 0:
         return _buildHome();
       case 1:
-        return VideoListPage();
-      case 2:
         return ProfilePage(email: "");
 
       default:
@@ -476,7 +464,7 @@ class _HoMepaState extends State<HoMepa> {
         scrollDirection: Axis.vertical,
         children: <Widget>[
           ListTile(
-            leading: Text(
+            leading: const Text(
               'Attractions:',
               style: TextStyle(
                 color: Color(0xff443433),
@@ -508,7 +496,7 @@ class _HoMepaState extends State<HoMepa> {
           _buildImageAssetListe1(
               imageAssets, imageDescriptions, _favIconColors),
           ListTile(
-            leading: Text(
+            leading: const Text(
               'Hotels:',
               style: TextStyle(
                 fontFamily: 'Raleway',
@@ -527,7 +515,7 @@ class _HoMepaState extends State<HoMepa> {
                 );
                 print('passed');
               },
-              child: Text(
+              child: const Text(
                 'View all hotels',
                 style: TextStyle(
                   color: Color(0xff13162b),
@@ -539,7 +527,7 @@ class _HoMepaState extends State<HoMepa> {
           ),
           _buildImageAssetListe2(imagehotel, villehotel, _favIconColors),
           ListTile(
-            leading: Text(
+            leading: const Text(
               'Restaurant:',
               style: TextStyle(
                 fontFamily: 'Raleway',
@@ -553,12 +541,12 @@ class _HoMepaState extends State<HoMepa> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => RestoPage(),
+                    builder: (context) => const RestoPage(),
                   ),
                 );
                 print('passed');
               },
-              child: Text(
+              child: const Text(
                 'View all restaurants',
                 style: TextStyle(
                   color: Color(0xff13162b),

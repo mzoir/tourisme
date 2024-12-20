@@ -1,6 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tourisme/view/restodetails.dart';
+import '../viewmodels/UserViewModel.dart';
 import '../viewmodels/ViewRestoModel.dart';
 import 'Profile.dart';
 import 'favatt.dart';
@@ -18,6 +21,42 @@ class _RestoPageState extends State<RestoPage> {
   void initState() {
     super.initState();
     Provider.of<RestaurantViewModel>(context, listen: false).loadRestaurants();
+  }
+  static Map<int,bool> favoriteStates = {};
+  final FirebaseFirestore firestore = FirebaseFirestore.instance;
+  Future<void> addFavoriteItem(String userId, String itemName, String category, String images, int id) async {
+    try {
+      DocumentReference userDocRef = firestore.collection('users').doc(userId);
+
+      QuerySnapshot querySnapshot = await userDocRef.collection('favoriterestau')
+          .where('id', isEqualTo: id)
+          .get();
+
+      if (querySnapshot.docs.isEmpty) {
+        await userDocRef.collection('favorites').add({
+          'name': itemName,
+          'location': category,
+          'image': images,
+          'id': id,
+          'timestamp': FieldValue.serverTimestamp(),
+        });
+        setState(() {
+          favoriteStates[id] = true;
+        });
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Favorite item added successfully!')),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Item already exists in favorites.')),
+        );
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error adding favorite item: $e')),
+      );
+    }
   }
 
   @override
@@ -52,6 +91,7 @@ class _RestoPageState extends State<RestoPage> {
       ),
       body: Consumer<RestaurantViewModel>(
         builder: (context, restaurantViewModel, child) {
+          final client = Provider.of<UserViewModel>(context, listen: false);
           if (restaurantViewModel.restaurants.isEmpty) {
             return const Center(child: CircularProgressIndicator());
           } else {
@@ -76,6 +116,11 @@ class _RestoPageState extends State<RestoPage> {
                       ),
                       child: Center(
                         child: ListTile(
+                          onTap:() {
+                            Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => Restode(item: restaurant),
+                            ));
+                          } ,
                           leading: Image.network(
                             restaurant.images[0],
                             width: 80,
@@ -91,6 +136,9 @@ class _RestoPageState extends State<RestoPage> {
                           ),
                           trailing: IconButton(
                             onPressed: () {
+                              addFavoriteItem(client.client.id, restaurant.name,
+                                  restaurant.ville, restaurant.images[0], restaurant.id);
+
                               restaurantViewModel.toggleFavorite(index);
                               showDialog(
                                 context: context,
@@ -155,7 +203,7 @@ class _RestoPageState extends State<RestoPage> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => FavRestoPage()),
+            MaterialPageRoute(builder: (context) => const FavRestoPage()),
           );
         },
         child: Icon(Icons.favorite),

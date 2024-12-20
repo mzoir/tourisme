@@ -1,6 +1,7 @@
 {
   "hotels": [
     {
+      "id": 1,
       "name": "Hotel Xaluca Dades",
       "location": "Boumalne Dades",
       "price": 34.5,
@@ -16,6 +17,7 @@
       "rating": 4.5
     },
     {
+      "id": 2,
       "name": "Kasbah Hotel Xaluca Arfoud",
       "location": "Erfoud",
       "price": 33.0,
@@ -30,7 +32,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7ELargeMapLink&ty=18&q=Kasbah+Hotel+Xaluca+Arfoud&segment=Hotel&ppois=31.487056732177734_-4.213201999664307_Kasbah+Hotel+Xaluca+Arfoud_%7E&cp=31.487053%7E-4.213192&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
       "rating": 4.4
     },
-    {
+    { "id":3,
       "name": "Chez Pierre",
       "location": "Dades Gorge",
       "price": 39.2,
@@ -44,7 +46,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EVacationRental%7EUnknown%7ELargeMapLink&ty=18&q=Chez+Pierre+map&ppois=31.511457443237305_-5.936528205871582_Chez+Pierre+map_%7E&cp=31.51124%7E-5.766449&v=2&sV=1&FORM=MPSRPL&lvl=11.0",
       "rating": 4.6
     },
-    {
+    { "id":3,
       "name": "Kasbah Tizimi",
       "location": "Erfoud",
       "price": 60.0,
@@ -59,7 +61,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Tizimi+Erfoud+map&segment=Hotel&ppois=31.42514991760254_-4.232150077819824_Kasbah+Tizimi+Erfoud+map_%7E&cp=31.425158%7E-4.226838&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
       "rating": 4.3
     },
-    {
+    { "id":4,
       "name": "Palais du Desert",
       "location": "Errachidia",
       "price": 33.5,
@@ -74,7 +76,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Palais+du+Desert+Errachidia+map&segment=Hotel&ppois=31.944929122924805_-4.398677825927734_Palais+du+Desert+Errachidia+map_%7E&cp=31.944938%7E-4.393363&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
       "rating": 4.5
     },
-    {
+    { "id":5,
       "name": "Riad Salam Erfoud",
       "location": "Erfoud",
       "price": 32.5,
@@ -88,7 +90,7 @@
       "map": "https://www.bing.com/maps?&mepi=128~Hotel~Unknown~LargeMapLink&ty=18&q=Kasbah%20Tizimi%20hotel%20map&segment=Hotel&ppois=31.428951263427734_-4.245874881744385_Kasbah%20Tizimi%20hotel%20map_~&cp=31.428951~-4.245875&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
       "rating": 4.4
     },
-    {
+    { "id":6,
       "name": "Hotel Belere Erfoud",
       "location": "Erfoud",
       "price": 40.5,
@@ -104,7 +106,7 @@
       ,
       "rating" : 4.0
     },
-    {
+    { "id":7,
       "name": "Auberge Les Roches",
       "location": "Merzouga",
       "price": 23.5,
@@ -119,7 +121,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Auberge+Les+Roches+Merzouga+map&segment=Hotel&ppois=31.095680236816406_-4.01373291015625_Auberge+Les+Roches+Merzouga+map_%7E&cp=31.095689%7E-4.008419&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
       , "rating" : 4.0
     },
-    {
+    { "id":8,
       "name": "Kasbah Hotel Tombouctou",
       "location": "Merzouga",
       "price": 28.5,
@@ -134,7 +136,7 @@
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Hotel+Tombouctou+Merzouga+map&segment=Hotel&ppois=31.089073181152344_-4.01304292678833_Kasbah+Hotel+Tombouctou+Merzouga+map_%7E&cp=31.089082%7E-4.007731&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
       , "rating" : 4.0
     },
-    {
+    { "id":9,
       "name": "Riad Nomad",
       "location": "Merzouga",
       "price": 40.5,

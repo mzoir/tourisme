@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 
 class Hotel {
   String name;
+  int id ;
   String location;
   String description;
   final List<String> images;
@@ -24,7 +25,9 @@ class Hotel {
     required this.reservation_link,
     required this.phone_number,
     required this.rating,
-    required this.map
+    required this.map,
+    required this.id
+
   });
 
   factory Hotel.fromJson(Map<String, dynamic> json) {
@@ -37,7 +40,8 @@ class Hotel {
         reservation_link : json['reservation_link'],
         phone_number :  json['phone_number'],
       map : json['map'],
-        rating: json['rating']
+        rating: json['rating'],
+        id :json['id']
     );
   }
 

@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 
 class Restaurant {
-  final String id;
+  final int id;
   final String name;
   final String address;
   final String ville;
